@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HTML Structure -->
+<div id="person-container"></div>
+
+<!-- JavaScript Code -->
+<script>
+  const person = {
+    name: "John Doe",
+    age: 30,
+    email: "john@example.com",
+  };
+
+  const personContainer = document.getElementById("person-container");
+
+  for (const key in person) {
+    const value = person[key];
+    const keyValueElement = document.createElement("p");
+    keyValueElement.textContent = `${key}: ${value}`;
+    personContainer.appendChild(keyValueElement);
+  }
+</script>
+
+    
+</body>
+</html>

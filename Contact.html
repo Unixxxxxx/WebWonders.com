@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Page</title>
+    <link rel="stylesheet" type="text/css" href="Contact.css">
+    <script src="Contact.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <section>
+        <h2>Contact Information</h2>
+        <p>For any inquiries or questions, please feel free to reach out to us.</p>
+        <ul>
+            <li>Email: info@example.com</li>
+            <li>Phone: 123-456-7890</li>
+            <li>Address: 123 ABC Street, City, Country</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+        <form action="/search" method="GET">
+            <!-- form fields go here -->
+        </form>
+
+    </section>
+    <div id="data-container">
+        <!-- Your data will be displayed here -->
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Our Company. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
